@@ -1,0 +1,195 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8">
+<title>OgilvyOne  |  Who - What - Where - When - Why -&-  How</title>
+<meta name="description" content="How to create a parallax scrolling effect using jQuery, HTML5 and CSS3">
+<meta name="author" content="Mohiuddin Parekh, Nettuts+">
+<!-- CSS Code -->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="css/animate.min.css">
+<style>
+.about_hover{background : url("images/about.gif") no-repeat scroll center top transparent !important}
+.about_hover{}
+</style>
+
+<!-- JS Code -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script src="js/script.js"></script>
+<script type="text/javascript" src="js/jquery.localscroll-1.2.7-min.js"></script>
+<script type="text/javascript" src="js/jquery.scrollTo-1.4.2-min.js"></script>
+<script type="text/javascript" src="js/jquery_004.js"></script>
+
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#nav').localScroll(5800);	
+	//.parallax(xPosition, speedFactor, outerHeight) options:
+	//xPosition - Horizontal position of the element
+	//inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
+	//outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
+	$('#home').parallax("50%", 0.9);
+	$('#about').parallax("50%", 0.9);
+	$('#frame_3').parallax("50%", 0.9);
+	$('#frame_4').parallax("10%", 2, false);
+	$('#frame_5').parallax("50%", 0.9);
+	$('#frame_6').parallax("50%", 0.9);
+	$('#frame_7').parallax("50%", 0.9);
+	$('#frame_8').parallax("50%", 0.9);
+	$('#frame_9').parallax("50%", 0.9);
+	
+	$('article').hover(function(){
+		var att =  $(this).parent().attr('id') ; 		
+		$(this).addClass(att+'_hover');
+	},
+	function(){		
+	var att =  $(this).parent().attr('id') ; 	
+		$(this).removeClass(att+'_hover');
+	}
+	
+	);
+})
+
+
+</script>
+</head>
+
+<body>
+<section id="index" data-speed="2005" data-type="background">
+  <article></article>
+  <div style="height:1000px;">&nbsp;</div>
+</section>
+<!-- Section #1 -->
+<section id="home" data-speed="-35" data-type="background-1">
+  <article></article>  
+</section>
+<!-- Section #2 -->
+<section id="about" data-speed="-35" data-type="background-2">
+  <article></article>
+	<div class="network"><img src="images/ogilvy_the_network.png"></div>
+</section>
+<!-- Section #3 -->
+<section id="frame_3" data-speed="-35" data-type="background-3">
+  <article></article>
+  	<div class="network"><img src="images/ogilvy_india.png"></div>
+    <div class="contant_outer">
+    	<h3>India’s largest, most awarded<br>
+communications network</h3>
+	<p>It's hard to avoid a pun here, but two Everests is the ultimate endorsement of our Twin Peaks strategy-Pervasive Creativity combined with effectiveness. The two logos at the foot of this email bear witness to this. They are not there just for decoration. As I have said before, and will never tire of saying, great creativity is not great at all if it doesn't make the cash register ring. </p>
+    
+    <div class="worldwide">Tham Khai Meng<br>
+
+<span>Worldwide CCO,  Ogilvy & Mather</span></div>
+
+						<div  class="outer_canals">
+                            <div class="box_1"><img src="images/build.png" />
+                              <h2>The Effies</h2>
+                                <p>Agency of the Year<br />
+                                2009 and 2010</p>
+                           </div>                           
+                           <div class="box_2"><img src="images/tiger.png" />
+                             <h2>Cannes</h2>
+                               <p>Most awards won<br>
+ 
+                               by an Indian agency<br>
+ over the last decade</p>
+                           </div>
+                       </div>
+    
+    </div>
+</section>
+<!-- Section #4 -->
+<section id="frame_4" data-speed="-35" data-type="background">
+  <article></article>  
+  <div class="network"><img src="images/ogilvyone_keyclients.png"></div>
+    <div class="contant_outer">
+    	<div id="logo_menu">
+            	<ul>	
+                	<li><img src="images/ibm.png" width="88" height="36" /></li>
+                    <li><img src="images/american_express.png" width="60" height="38" /></li>
+                    <li><img src="images/u_logo.png" width="42" height="40" /></li>
+                    <li><img src="images/unicef.png" width="126" height="29" /></li>
+                    <li><img src="images/yahoo.png" width="140" height="40" /></li>
+                    <li><img src="images/british_airways.png" width="179" height="46" /></li>
+               		<li><img src="images/itc_hotel.png" width="90" height="44" /></li>					
+                    <li><img src="images/cisco.png" width="95" height="40" /></li>
+                    <li><img src="images/ceat.png" width="76" height="40" /></li>
+                    <li><img src="images/perfem.png" width="88" height="39" /></li>
+                    <li><img src="images/foxcrime.png" width="119" height="39" /></li>
+                    <li><img src="images/chevrolet.png" width="82" height="39" /></li>
+                    <li><img src="images/vodafone.png" width="144" height="39" /></li>
+                    <li><img src="images/icici_bank.png" width="146" height="39" /></li>
+                    <li><img src="images/oupont.png" width="75" height="37" /></li>					
+                    <li><img src="images/htc.png" width="63" height="31" /></li>
+                    <li><img src="images/kodak.png" width="87" height="31" /></li>
+                    <li><img src="images/asian_paints.png" width="124" height="31" /></li>
+                    <li><img src="images/diageo.png" width="78" height="30" /></li>
+                    <li><img src="images/pernod_ricard.png" width="229" height="36" /></li>
+                    <li><img src="images/international_cricket_council.png" width="120" height="47" /></li>
+                    <li><img src="images/acc.png" width="69" height="60" /></li>
+                    <li><img src="images/genpact.png" width="136" height="60" /></li>
+                    <li><img src="images/elle.png" width="70" height="65" /></li>
+                    <li><img src="images/spice.png" width="48" height="74" /></li>
+                    <li><img src="images/starplus.png" width="62" height="77" /></li>
+                    <li><img src="images/sony_make.believe.png" width="109" height="70" /></li>
+                    <li><img src="images/the_economist.png" width="80" height="55" /></li>
+                    <li><img src="images/dassault.png" width="114" height="55" /></li>
+                    <li><img src="images/vespa.png" width="91" height="60" /></li>
+       		  </ul>
+    
+    </div>    
+    </div>  
+</section>
+<!-- Section #4 -->
+<section id="frame_5" data-speed="-35" data-type="background">
+  <article></article>
+</section>
+
+<section id="frame_10" data-speed="-35" data-type="background">
+  <article></article>
+</section>
+
+<section id="frame_6" data-speed="-35" data-type="background-6">
+  <article></article>
+   <div class="bg"><img src="images/frame_9_2.png"></div>
+</section>
+
+<section id="frame_9" data-speed="-35" data-type="background">
+  <article></article>
+   <div class="bg"><img src="images/frame_9_5.png"></div>
+</section>
+
+<!-- Section #4 -->
+
+
+
+
+<section id="frame_7" data-speed="-35" data-type="background-7">
+  <article></article>
+  <div class="bg"><img src="images/frame_7.png"></div>
+</section>
+
+<!-- Section #4 -->
+<section id="frame_12" data-speed="-35" data-type="background-7">
+  <article></article>
+  <div class="bg"><img src="images/frame_unlike.png"></div>
+</section>
+<!-- Section #4 -->
+
+        <ul id="nav">
+            <li><a href="#home" title="Next Section"><img src="images/dot.png" alt="Link" /></a></li>
+            <li><a href="#about" title="Next Section"><img src="images/dot-1.png" alt="Link" /></a></li>
+            <li><a href="#frame_3" title="Next Section"><img src="images/dot-2.png" alt="Link" /></a></li>
+            <li><a href="#frame_4" title="Next Section"><img src="images/dot-3.png" alt="Link" /></a></li>
+            <li><a href="#frame_5" title="Next Section"><img src="images/dot-4.png" alt="Link" /></a></li>
+            <li><a href="#frame_10" title="Next Section"><img src="images/dot-own.png" alt="Link" /></a></li>            
+            <li><a href="#frame_6" title="Next Section"><img src="images/dot-6.png" alt="Link" /></a></li>          
+            <li><a href="#frame_9" title="Next Section"><img src="images/dot-tweet.png" alt="Link" /></a></li>            
+            <li><a href="#frame_7" title="Next Section"><img src="images/dot-user.png" alt="Link" /></a></li>
+            <li><a href="#frame_12" title="Next Section"><img src="images/dot-unlike.png" alt="Link" /></a></li>
+        </ul>
+</body>
+</html>
